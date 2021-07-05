@@ -1,0 +1,30 @@
+public class Zero
+{
+  public static void main (String[]args)
+  {
+
+    int n = 7;
+    int count = 0;
+    int Arr[] = { 1, 2, 0, 7, 0, 0, 6 };
+    for (int i = 0; i < n; i++)
+      {
+	if (Arr[i] != 0)
+	  {
+	    Arr[count++] = Arr[i];
+	  }
+      }
+    while (count < n)
+      {
+	Arr[count++] = 0;
+      }
+    for (int j = 0; j < n; j++)
+      {
+	System.out.print (Arr[j]);
+      }
+  }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+OUTPUT:
+C:\Users\hp>javac Zero.java
+C:\Users\hp>java Zero
+1276000
